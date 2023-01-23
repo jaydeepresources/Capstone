@@ -1,0 +1,73 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Flix Pundit</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Movies</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="this.authService.loginStatus">
+          <a
+            class="nav-link"
+            routerLink="/reviews/add"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Add Review</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="!this.authService.loginStatus">
+          <a
+            class="nav-link"
+            routerLink="/signup"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Sign Up</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="!this.authService.loginStatus">
+          <a class="nav-link" routerLink="/signin" routerLinkActive="active"
+            >Sign In</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="this.authService.loginStatus">
+          <a class="nav-link" routerLink="/" (click)="signOut()">Sign Out</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control bg-dark text-light me-2"
+          type="search"
+          placeholder="search a movie"
+          aria-label="Search"
+          name="movieName"
+          [(ngModel)]="movieName"
+        />
+        <button
+          class="btn btn-outline-light"
+          [disabled]="movieName.length == 0"
+          type="button"
+          (click)="searchMovie()"
+        >
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

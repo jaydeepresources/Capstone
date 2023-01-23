@@ -1,0 +1,135 @@
+<div class="container">
+  <div *ngIf="moviesService.movie">
+    <p class="display-5 text-light mt-5 mb-3">
+      {{ moviesService.movie.movieName }}
+    </p>
+    <hr style="color: bisque" />
+
+    <p class="text-light">
+      {{ moviesService.movie.movieYear }} <span class="me-2">,</span>
+      {{ moviesService.movie.movieLanguage }}<span class="me-2">,</span>
+      {{ moviesService.movie.movieGenre }}
+    </p>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <img [src]="moviesService.movie.movieImg" class="img-wide" alt="" />
+      </div>
+      <div class="col-sm">
+        <p class="h3 text-light mb-3">Cast and Crew</p>
+        <hr style="color: bisque" />
+        <ul class="list-group list-group-flush mt-4">
+          <li class="list-group-item bg-dark text-light">
+            <span class="text-light me-1"> <b> Writer:</b></span>
+            <span> {{ moviesService.movie.cast.writer }} </span>
+          </li>
+          <li class="list-group-item bg-dark text-light">
+            <span class="me-1"> <b> Director:</b></span>
+            <span> {{ moviesService.movie.cast.director }} </span>
+          </li>
+          <li class="list-group-item bg-dark text-light">
+            <span class="me-1"> <b> Music:</b></span>
+            <span> {{ moviesService.movie.cast.music }} </span>
+          </li>
+          <li class="list-group-item bg-dark text-light">
+            <span class="me-1"> <b> Camera:</b></span>
+            <span> {{ moviesService.movie.cast.camera }} </span>
+          </li>
+          <li class="list-group-item bg-dark text-light">
+            <span class="me-1"> <b> Actors:</b></span>
+            <span> {{ moviesService.movie.cast.actors }} </span>
+          </li>
+        </ul>
+        <!-- <p class="h3 text-light mt-5 mb-3">User Reviews</p>
+      <hr style="color: bisque" />
+      <div *ngFor="let review of reviewsService.reviews; let i = index">
+        <p class="h4 text-light">{{ review.user.userName }}</p>
+        <p class="h4 text-light">{{ review.reviewRating }}</p>
+        <p class="h4 text-light">{{ review.reviewDescription }}</p>
+      </div> -->
+        <p class="h3 text-light mt-5 mb-3">User Reviews</p>
+        <hr style="color: bisque" />
+        <div *ngIf="reviewsService.reviews.length > 0">
+          <div class="d-flex justify-content-end">
+            <button
+              class="btn btn-dark me-2"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <i class="bi bi-caret-left-fill"></i>
+            </button>
+            <button
+              class="btn btn-dark"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <i class="bi bi-caret-right-fill"></i>
+            </button>
+          </div>
+          <div id="carouselExample" class="carousel slide mt-2">
+            <div class="carousel-inner">
+              <div
+                class="carousel-item {{ i == 0 ? 'active' : '' }}"
+                *ngFor="let review of reviewsService.reviews; let i = index"
+              >
+                <div>
+                  <p class="h4 text-light">{{ review.user.userName }}</p>
+                  <p class="h6 text-light">
+                    <i
+                      class="bi bi-star{{
+                        review.reviewRating >= 1 ? '-fill' : ''
+                      }}"
+                    ></i>
+                    <i
+                      class="bi bi-star{{
+                        review.reviewRating >= 2 ? '-fill' : ''
+                      }}"
+                    ></i>
+                    <i
+                      class="bi bi-star{{
+                        review.reviewRating >= 3 ? '-fill' : ''
+                      }}"
+                    ></i>
+                    <i
+                      class="bi bi-star{{
+                        review.reviewRating >= 4 ? '-fill' : ''
+                      }}"
+                    ></i>
+                    <i
+                      class="bi bi-star{{
+                        review.reviewRating >= 5 ? '-fill' : ''
+                      }}"
+                    ></i>
+                  </p>
+                  <p class="text-light">{{ review.reviewDescription }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="reviewsService.reviews.length == 0">
+          <div
+            class="alert alert-dark bg-dark border-0 text-light"
+            role="alert"
+          >
+            <p class="text-light mb-0">
+              <span class="me-2"><i class="bi bi-info-circle-fill"></i></span>
+              <span> No reviews yet.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="alert alert-dark bg-dark border-0 mt-5"
+    role="alert"
+    *ngIf="!moviesService.movie"
+  >
+    <p class="text-light mb-0">
+      <span class="me-2"><i class="bi bi-info-circle-fill"></i></span>
+      <span> No movies were found.</span>
+    </p>
+  </div>
+</div>

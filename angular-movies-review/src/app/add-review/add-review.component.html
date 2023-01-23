@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="py-3">
+    <p class="display-5 mb-0 text-light">Add Review</p>
+    <hr style="color: bisque" />
+  </div>
+
+  <form #addReviewForm="ngForm" (ngSubmit)="addReviewSubmit(addReviewForm)">
+    <div class="form-group mt-2 mb-3">
+      <label class="text-light mb-2">Select Movie</label>
+      <select
+        class="form-select bg-dark text-light"
+        name="movieId"
+        #reviewDescription="ngModel"
+        [(ngModel)]="review.movie.movieId"
+        required
+      >
+        <option selected>Select a movie from this list</option>
+        <option
+          [value]="movie.movieId"
+          *ngFor="let movie of moviesService.movies; let i = index"
+        >
+          {{ movie.movieName }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group mb-3">
+      <label class="text-light mb-2">Select Rating</label>
+      <select
+        class="form-select bg-dark text-light"
+        name="reviewRating"
+        #reviewDescription="ngModel"
+        [(ngModel)]="review.reviewRating"
+        required
+      >
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="3">4</option>
+        <option value="3">5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="text-light mb-2">Review Description</label>
+      <textarea
+        class="form-control bg-dark text-light"
+        id="exampleFormControlTextarea1"
+        rows="3"
+        name="reviewDescription"
+        #reviewDescription="ngModel"
+        [(ngModel)]="review.reviewDescription"
+        required
+      ></textarea>
+      <div
+        class="alert alert-danger"
+        *ngIf="reviewDescription.dirty && reviewDescription.invalid"
+      >
+        <strong>Oh snap!</strong>
+        Review Description can't be empty !
+      </div>
+    </div>
+    <button
+      class="btn btn-dark mt-3"
+      type="submit"
+      [disabled]="addReviewForm.pristine || addReviewForm.invalid"
+    >
+      Add Review
+    </button>
+  </form>
+
+  <div class="alert alert-success mt-3" *ngIf="successFlag">
+    <i class="fas fa-circle-notch fa-spin fa-lg mr-3"></i>
+    <strong>Success !</strong> Review has been addedd successfully.
+  </div>
+
+  <div class="alert alert-danger mt-3" *ngIf="errorFlag">
+    <i class="fas fa-exclamation-circle fa-lg mr-3"></i>
+    <strong>Oops!</strong> Review couldn't be added. Please try again !
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container my-4">
+  <p class="display-5 my-4 text-light">Explore movies</p>
+
+  <div class="row row-cols-4 row-cols-md-4 g-4">
+    <div class="col" *ngFor="let movie of moviesService.movies; let i = index">
+      <div class="card border-0 my-2">
+        <img
+          [src]="movie.movieImg"
+          class="card-img-top img-card-size border-0"
+          alt="..."
+        />
+        <div class="card-body bg-dark py-2">
+          <div class="d-flex justify-content-center">
+            <a
+              routerLink="{{ '/movies/' + movie.movieId }}"
+              class="btn btn-dark"
+              >{{ movie.movieName }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
