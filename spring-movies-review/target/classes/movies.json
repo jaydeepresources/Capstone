@@ -1,0 +1,347 @@
+[
+    {
+        "movieId": 2,
+        "movieName": "Memento",
+        "movieLanguage": "English",
+        "movieYear": 2000,
+        "movieGenre": "Thriller",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
+        "cast": {
+            "castId": 39,
+            "writer": "Christopher Nolan",
+            "director": "Christopher Nolan",
+            "music": "David Julyan",
+            "camera": "Wally Pfister",
+            "actors": "Guy Pearce, Carrie-Anne Moss, Joe Pantoliano"
+        }
+    },
+    {
+        "movieId": 3,
+        "movieName": "The Shawshank Redemption",
+        "movieLanguage": "English",
+        "movieYear": 1994,
+        "movieGenre": "Drama",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+        "cast": {
+            "castId": 38,
+            "writer": "Stephen King",
+            "director": "Frank Darabont",
+            "music": "Thomas Newman",
+            "camera": "Roger Deakins",
+            "actors": "Tim Robbins, Morgan Freeman, Bob Gunton"
+        }
+    },
+    {
+        "movieId": 4,
+        "movieName": "The Godfather",
+        "movieLanguage": "English",
+        "movieYear": 1972,
+        "movieGenre": "Drama",
+        "movieImg": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
+        "cast": {
+            "castId": 40,
+            "writer": "Mario Puzo",
+            "director": "Francis Ford Coppola",
+            "music": "Nino Rota",
+            "camera": "Gordon Willis",
+            "actors": "Marlon Brando, Al Pacino, James Caan"
+        }
+    },
+    {
+        "movieId": 5,
+        "movieName": "The Dark Knight",
+        "movieLanguage": "English",
+        "movieYear": 2008,
+        "movieGenre": "Drama",
+        "movieImg": "https://images-cdn.ubuy.co.in/6353767f91f4f65ddc401cbd-trends-international-dark-knight-rises.jpg",
+        "cast": {
+            "castId": 41,
+            "writer": "Christopher Nolan",
+            "director": "Christopher Nolan",
+            "music": "Hans Zimmer",
+            "camera": "Wally Pfister",
+            "actors": "Christian Bale, Heath Ledger, Aaron Eckhart"
+        }
+    },
+    {
+        "movieId": 6,
+        "movieName": "Schindler's List",
+        "movieLanguage": "English",
+        "movieYear": 1993,
+        "movieGenre": "History",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BZDJhNzM3YWYtOTI3My00YjVmLWE5NjktZTQzNDkzMTNmZGQ1XkEyXkFqcGdeQXVyMjA3NzQyMA@@._V1_.jpg",
+        "cast": {
+            "castId": 42,
+            "writer": "Steven Zaillian",
+            "director": "Steven Spielberg",
+            "music": "John Williams",
+            "camera": "Janusz Kaminski",
+            "actors": "Liam Neeson, Ralph Fiennes, Ben Kingsley, Caroline Goodall"
+        }
+    },
+    {
+        "movieId": 7,
+        "movieName": "Pulp Fiction",
+        "movieLanguage": "English",
+        "movieYear": 1994,
+        "movieGenre": "Crime",
+        "movieImg": "https://cdn.shopify.com/s/files/1/0151/0741/products/pg1013_1024x1024.jpg?v=1578633270",
+        "cast": {
+            "castId": 43,
+            "writer": "Quentin Tarantino",
+            "director": "Quentin Tarantino",
+            "music": "Karyn Rachtman",
+            "camera": "Andrzej Sekula",
+            "actors": "John Travolta, Uma Thurman, Samuel L. Jackson"
+        }
+    },
+    {
+        "movieId": 8,
+        "movieName": "Rocketry: The Nambi Effect",
+        "movieLanguage": "Hindi",
+        "movieYear": 2022,
+        "movieGenre": "Biography",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BNzBkMTYwYjktMzFlZS00MmNhLTgxNjYtNGEwYjUxYTBlNjM5XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_.jpg",
+        "cast": {
+            "castId": 44,
+            "writer": "Madhavan",
+            "director": "Madhavan, Ananth Mahadevan",
+            "music": "Sam C.S.",
+            "camera": "Sirsha Ray",
+            "actors": "Madhavan, SimranRajit Kapoor"
+        }
+    },
+    {
+        "movieId": 9,
+        "movieName": "3 Idiots",
+        "movieLanguage": "Hindi",
+        "movieYear": 2009,
+        "movieGenre": "Comedy",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+        "cast": {
+            "castId": 45,
+            "writer": "Rajkumar Hirani",
+            "director": "Rajkumar Hirani",
+            "music": "Shantanu Moitra",
+            "camera": "C.K. Muraleedharan",
+            "actors": "Aamir Khan, Madhavan, Mona Singh, Kareena Kapoor"
+        }
+    },
+    {
+        "movieId": 10,
+        "movieName": "Dangal",
+        "movieLanguage": "Hindi",
+        "movieYear": 2016,
+        "movieGenre": "Biography",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_FMjpg_UX1000_.jpg",
+        "cast": {
+            "castId": 46,
+            "writer": "Piyush Gupta",
+            "director": "Nitesh Tiwari",
+            "music": "Pritam Chakraborty",
+            "camera": "Satyajit Pande",
+            "actors": "Aamir Khan, Sakshi Tanwar, Fatima Sana Shaikh"
+        }
+    },
+    {
+        "movieId": 11,
+        "movieName": "Jersey",
+        "movieLanguage": "Hindi",
+        "movieYear": 2019,
+        "movieGenre": "Drama",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BNDQ4YmExNjctMGY5NC00N2RjLThiYjQtNGUxNTZjY2NhNTQyXkEyXkFqcGdeQXVyMTUxOTQwMzE0._V1_.jpg",
+        "cast": {
+            "castId": 64,
+            "writer": "Gowtam Tinnanuri",
+            "director": "Gowtam Tinnanuri",
+            "music": "Anirudh Ravichander",
+            "camera": "Sanu John Varughese",
+            "actors": "Nani, Shraddha SrinathSathyaraj"
+        }
+    },
+    {
+        "movieId": 12,
+        "movieName": "Drishyam",
+        "movieLanguage": "Hindi",
+        "movieYear": 2013,
+        "movieGenre": "Thriller",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BYmJhZmJlYTItZmZlNy00MGY0LTg0ZGMtNWFkYWU5NTA1YTNhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+        "cast": {
+            "castId": 65,
+            "writer": "Upendra Sidhaye",
+            "director": "Nishikant Kamat",
+            "music": "Anirudh Ravichander",
+            "camera": "Sanu John Varughese",
+            "actors": "Ajay Devgn, Shriya Saran, Tabu"
+        }
+    },
+    {
+        "movieId": 13,
+        "movieName": "Satya",
+        "movieLanguage": "Hindi",
+        "movieYear": 1998,
+        "movieGenre": "Crime",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BMTMwMjk3MzA2OF5BMl5BanBnXkFtZTcwNjU2ODgzMQ@@._V1_FMjpg_UX1000_.jpg",
+        "cast": {
+            "castId": 66,
+            "writer": "Anurag Kashyap, Saurabh Shukla",
+            "director": "Ram Gopal Varma",
+            "music": "Anirudh Ravichander",
+            "camera": "Sanu John Varughese",
+            "actors": "J.D. Chakravarthi, Manoj Bajpayee, Urmila Matondkar"
+        }
+    },
+    {
+        "movieId": 14,
+        "movieName": "Sita Ramam",
+        "movieLanguage": "Telugu",
+        "movieYear": 2022,
+        "movieGenre": "Action",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BN2RjZDJhYzUtOTQ5Yy00OWM3LWE5OTctM2Y0YWVmNzAzODllXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
+        "cast": {
+            "castId": 67,
+            "writer": "Hanu Raghavapudi",
+            "director": "Hanu Raghavapudi",
+            "music": "Vishal Chandrashekhar",
+            "camera": "Shreyaas Krishna",
+            "actors": "Dulquer Salmaan, Mrunal Thakur, Rashmika Mandanna"
+        }
+    },
+    {
+        "movieId": 15,
+        "movieName": "Baahubali 2: The Conclusion",
+        "movieLanguage": "Telugu",
+        "movieYear": 2017,
+        "movieGenre": "Action",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BOGNlNmRkMjctNDgxMC00NzFhLWIzY2YtZDk3ZDE0NWZhZDBlXkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg",
+        "cast": {
+            "castId": 68,
+            "writer": "Vijayendra Prasad",
+            "director": "S.S. Rajamouli",
+            "music": "M.M. Keeravani",
+            "camera": "Shreyaas Krishna",
+            "actors": "Prabhas, Rana Daggubati, Anushka Shetty"
+        }
+    },
+    {
+        "movieId": 16,
+        "movieName": "Baahubali 1: The Beginning",
+        "movieLanguage": "Telugu",
+        "movieYear": 2015,
+        "movieGenre": "Action",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg",
+        "cast": {
+            "castId": 69,
+            "writer": "Vijayendra Prasad",
+            "director": "S.S. Rajamouli",
+            "music": "M.M. Keeravani",
+            "camera": "Shreyaas Krishna",
+            "actors": "Prabhas, Rana Daggubati, Anushka Shetty"
+        }
+    },
+    {
+        "movieId": 17,
+        "movieName": "Arjun Reddy",
+        "movieLanguage": "Telugu",
+        "movieYear": 2017,
+        "movieGenre": "Drama",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BMzFhMThiOWItMzRjNC00YzQwLTkyZWItYmJhNzgwYzY1ODI0XkEyXkFqcGdeQXVyNTcyMzkyODg@._V1_.jpg",
+        "cast": {
+            "castId": 70,
+            "writer": "Mandela Pedaswamy",
+            "director": "Sandeep Reddy Vanga",
+            "music": "Radhan, Harshavardhan Rameshwar",
+            "camera": "Raj Thota",
+            "actors": "Vijay Deverakonda, Shalini Pandey, Jia Sharma"
+        }
+    },
+    {
+        "movieId": 18,
+        "movieName": "Elle",
+        "movieLanguage": "French",
+        "movieYear": 2016,
+        "movieGenre": "Thriller",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BMTc5NDI5MzA1OF5BMl5BanBnXkFtZTgwMTQzNTQwMDI@._V1_.jpg",
+        "cast": {
+            "castId": 71,
+            "writer": "Mandela Pedaswamy",
+            "director": "Paul Verhoeven",
+            "music": "Anne Dudley",
+            "camera": "Stéphane Fontaine",
+            "actors": "Isabelle Huppert, Laurent Lafitte, Anne Consigny"
+        }
+    },
+    {
+        "movieId": 19,
+        "movieName": "La Vie En Rose",
+        "movieLanguage": "French",
+        "movieYear": 2007,
+        "movieGenre": "Drama",
+        "movieImg": "https://image.tmdb.org/t/p/original/Ka33HqnI6mULV5J23hHiZG1MYS.jpg",
+        "cast": {
+            "castId": 90,
+            "writer": "Isabelle Sobelman, Olivier Dahan",
+            "director": "Olivier Dahan",
+            "music": "Christopher Gunning",
+            "camera": "Tetsuo Nagata",
+            "actors": "Marion Cotillard, Sylvie Testud, Pascal Greggory"
+        }
+    },
+    {
+        "movieId": 20,
+        "movieName": "Pierrot le Fou",
+        "movieLanguage": "French",
+        "movieYear": 1965,
+        "movieGenre": "Drama",
+        "movieImg": "https://cdn.shopify.com/s/files/1/1057/4964/products/Pierrot-Le-Fou-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29_05b81b07-a9d8-4b2d-a87c-e019669f66e5.jpg?v=1665550864",
+        "cast": {
+            "castId": 89,
+            "writer": "Rémo Forlani",
+            "director": "Jean-Luc Godard",
+            "music": "Antoine Duhamel",
+            "camera": "Raoul Coutard",
+            "actors": "Jean-Paul Belmondo, Anna Karina, Graziella Galvani"
+        }
+    },
+    {
+        "movieId": 21,
+        "movieName": "All Quiet on the Western Front",
+        "movieLanguage": "German",
+        "movieYear": 2022,
+        "movieGenre": "History",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BYTU2OWJhMjYtMjc2Ni00OTg4LTkxNGYtYjgwNGMyNjA3ODcxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "cast": {
+            "castId": 72,
+            "writer": "Edward Berger",
+            "director": "Edward Berger",
+            "music": "Volker Bertelmann",
+            "camera": "James Friend",
+            "actors": "Felix Kammerer, Albrecht Schuch, Aaron Hilmer"
+        }
+    },
+    {
+        "movieId": 22,
+        "movieName": "Corsage",
+        "movieLanguage": "German",
+        "movieYear": 2022,
+        "movieGenre": "History",
+        "movieImg": "https://m.media-amazon.com/images/M/MV5BYjI2MTgzMjgtYjk3NS00OWUyLThjOTYtNjVkZjRiOTYwM2JiXkEyXkFqcGdeQXVyNDY5NTQyMDU@._V1_.jpg",
+        "cast": {
+            "castId": 88,
+            "writer": "Marie Kreutzer",
+            "director": "Marie Kreutzer",
+            "music": "Camille",
+            "camera": "Judith Kaufmann",
+            "actors": "Vicky Krieps, Colin Morgan, Florian Teichtmeister"
+        }
+    },
+    {
+        "movieId": 32,
+        "movieName": null,
+        "movieLanguage": null,
+        "movieYear": null,
+        "movieGenre": null,
+        "movieImg": null,
+        "cast": null
+    }
+]

@@ -1,0 +1,10 @@
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/model/User.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/model/Cast.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/model/Movie.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/dao/CastRepository.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/controllers/UserController.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/dao/ReviewRepository.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/dao/UserRepository.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/dao/MovieRepository.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/model/Review.java
+/Users/administrator/Downloads/Spring-Data-JPA-simple/demo/src/main/java/com/simplilearn/capstone/MovieReviewsAppApplication.java
