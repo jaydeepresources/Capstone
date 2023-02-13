@@ -1,0 +1,5 @@
+.img-card-size {
+  max-height: 350px;
+  min-height: 200px;
+  max-width: auto;
+}

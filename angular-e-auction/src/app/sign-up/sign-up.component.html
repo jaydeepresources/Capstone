@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="py-3">
+    <p class="display-5 mb-0 text-primary">Sign Up</p>
+    <hr style="color: bisque" />
+  </div>
+
+  <form #signUpForm="ngForm" (ngSubmit)="signUpSubmit(signUpForm)">
+    <div class="form-group mb-3">
+      <label class="text-primary mb-2">User Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter User Name"
+        name="userName"
+        #userName="ngModel"
+        [(ngModel)]="user.userName"
+        required
+      />
+      <div
+        class="alert alert-danger"
+        *ngIf="userName.dirty && userName.invalid"
+      >
+        <strong>Oh snap!</strong>
+        User Name can't be empty !
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label class="text-primary mb-2">User Email</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter User Email"
+        name="userEmail"
+        #userEmail="ngModel"
+        [(ngModel)]="user.userEmail"
+        required
+      />
+      <div
+        class="alert alert-danger"
+        *ngIf="userEmail.dirty && userEmail.invalid"
+      >
+        <strong>Oh snap!</strong>
+        User Email can't be empty !
+      </div>
+    </div>
+
+    <div class="form-group mt-3">
+      <label class="text-primary mb-2">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Enter Password"
+        name="password"
+        #password="ngModel"
+        [(ngModel)]="user.userPassword"
+        required
+      />
+      <div
+        class="alert alert-danger"
+        *ngIf="password.dirty && password.invalid"
+      >
+        <strong>Oh snap!</strong>
+        Password can't be empty !
+      </div>
+    </div>
+
+    <button
+      class="btn btn-primary mt-3"
+      type="submit"
+      [disabled]="signUpForm.pristine || signUpForm.invalid"
+    >
+      Sign Up
+    </button>
+  </form>
+
+  <div class="alert alert-success mt-3" *ngIf="successFlag">
+    <i class="fas fa-circle-notch fa-spin fa-lg mr-3"></i>
+    <strong>Hang On!</strong> You are being redirected to the home page.
+  </div>
+
+  <div class="alert alert-danger mt-3" *ngIf="errorFlag">
+    <i class="fas fa-exclamation-circle fa-lg mr-3"></i>
+    <strong>Oops!</strong> Couldn't create an account. Please try again !
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="py-3">
+    <p class="display-5 mb-0 text-primary">All Bids</p>
+    <hr />
+  </div>
+
+  <div
+    class="card mb-2"
+    *ngFor="let bid of bidSellerService.bidBuyers; let i = index"
+  >
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <strong> Posted By:</strong>
+        <span class="text-primary"> {{ bid.buyer.userName }} </span>
+      </li>
+      <li class="list-group-item">
+        <strong> Bid Date:</strong> {{ bid.bidBuyerDate }}
+      </li>
+      <li class="list-group-item">
+        <strong> Bid Price:</strong> {{ bid.bidPrice }}
+      </li>
+      <li class="list-group-item">
+        <strong> Bid Status:</strong>
+        <span class="{{ bid.bidStatus === 'approved' ? 'text-success' : '' }}">
+          {{ bid.bidStatus }}
+        </span>
+      </li>
+      <span
+        *ngIf="
+          authService.currentUser &&
+          bidSellerService.bidSeller.user.userId ===
+            authService.currentUser.userId
+        "
+      >
+        <button
+          type="button"
+          class="list-group-item list-group-item-action list-group-item-primary"
+          *ngIf="bidSellerService.existsFlag"
+          (click)="acceptBid(bid.bidBuyerId)"
+        >
+          Accept Bid
+        </button>
+      </span>
+    </ul>
+  </div>
+</div>

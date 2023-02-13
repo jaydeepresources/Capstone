@@ -1,0 +1,120 @@
+<div class="container">
+  <div class="py-3">
+    <p class="display-5 mb-0 text-primary">Add Item Details for Auction</p>
+    <hr />
+
+    <form #addForm="ngForm" (ngSubmit)="addBidSeller(addForm)">
+      <div class="mb-3">
+        <label class="form-label">Item Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="itemName"
+          #itemName="ngModel"
+          [(ngModel)]="bidSeller.item.itemName"
+          required
+        />
+        <div
+          class="alert alert-danger"
+          *ngIf="itemName.dirty && itemName.invalid"
+        >
+          <strong>Oh snap!</strong>
+          Item Name can't be empty !
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Item Description</label>
+        <textarea
+          class="form-control"
+          rows="3"
+          name="itemDescription"
+          #itemDescription="ngModel"
+          [(ngModel)]="bidSeller.item.itemDescription"
+          required
+        ></textarea>
+        <div
+          class="alert alert-danger"
+          *ngIf="itemDescription.dirty && itemDescription.invalid"
+        >
+          <strong>Oh snap!</strong>
+          Item Description can't be empty !
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Item Image</label>
+        <input
+          type="text"
+          class="form-control"
+          name="itemImg"
+          #itemImg="ngModel"
+          [(ngModel)]="bidSeller.item.itemImg"
+          required
+        />
+        <div
+          class="alert alert-danger"
+          *ngIf="itemImg.dirty && itemImg.invalid"
+        >
+          <strong>Oh snap!</strong>
+          Item Image can't be empty !
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Min Price</label>
+        <input
+          type="text"
+          class="form-control"
+          name="itemMinPrice"
+          #itemMinPrice="ngModel"
+          [(ngModel)]="bidSeller.item.itemMinPrice"
+          required
+        />
+        <div
+          class="alert alert-danger"
+          *ngIf="itemMinPrice.dirty && itemMinPrice.invalid"
+        >
+          <strong>Oh snap!</strong>
+          Min Price can't be empty !
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Category</label>
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          name="category"
+          #category="ngModel"
+          [(ngModel)]="bidSeller.item.category.categoryId"
+          required
+        >
+          <option
+            [value]="category.categoryId"
+            *ngFor="let category of addItem.categories; let i = index"
+          >
+            {{ category.categoryName }}
+          </option>
+        </select>
+      </div>
+
+      <div class="alert alert-success my-2" *ngIf="addItem.successFlag">
+        <strong>Success !</strong>
+        Your item was addedd successfully.
+      </div>
+      <div class="alert alert-danger my-2" *ngIf="addItem.errorFlag">
+        <strong>Oops !</strong>
+        Your item couldn't be added.
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="addForm.pristine || addForm.invalid"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

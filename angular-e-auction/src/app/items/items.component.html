@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="py-3">
+    <p class="display-5 mb-0 text-primary">Items available for auction</p>
+    <hr />
+
+    <div class="d-flex justify-content-end align-items-center mb-2">
+      <span class="h5 p-0 m-0 me-2"> Filter By: </span>
+      <button
+        class="btn btn-primary me-2"
+        (click)="getMyBidItems()"
+        [disabled]="!authService.currentUser"
+      >
+        My Items
+      </button>
+      <button
+        class="btn btn-primary"
+        (click)="resetItems()"
+        [disabled]="!authService.currentUser"
+      >
+        Reset
+      </button>
+    </div>
+    <div
+      class="card mb-3"
+      *ngFor="let item of itemsService.items; let i = index"
+    >
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            [src]="item.itemImg"
+            class="img-card-size rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h4 class="card-title text-primary">
+              <a routerLink="{{ '/items/' + item.itemId }}">
+                {{ item.itemName }}</a
+              >
+            </h4>
+            <p class="card-text mb-2">
+              {{ item.itemDescription }}
+            </p>
+            <p class="card-text my-1">
+              <small class="text-muted"
+                ><b>Category:</b> {{ item.category.categoryName }}
+              </small>
+            </p>
+            <p class="card-text my-1">
+              <small class="text-muted">
+                <b> Min Price:</b> Rs. {{ item.itemMinPrice }}
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

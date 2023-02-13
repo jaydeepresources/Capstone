@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="py-3">
+    <p class="display-5 mb-0 text-primary">Complete Payment</p>
+    <hr />
+  </div>
+
+  <form #paymentForm="ngForm" (ngSubmit)="makePayment(paymentForm)">
+    <div class="mb-3">
+      <input
+        type="text"
+        #cardNo="ngModel"
+        name="cardNo"
+        [(ngModel)]="payment.cardNo"
+        class="form-control"
+        id=""
+        placeholder="Card Number"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        type="text"
+        #cardName="ngModel"
+        name="cardName"
+        [(ngModel)]="payment.cardName"
+        class="form-control"
+        id=""
+        placeholder="Name as displayed on card"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        type="text"
+        #cardExpiry="ngModel"
+        name="cardExpiry"
+        [(ngModel)]="payment.cardExpiry"
+        class="form-control"
+        id=""
+        placeholder="Valid Through(mm/yy)"
+        required
+      />
+    </div>
+    <div class="mb-0">
+      <input
+        type="text"
+        #cardCVV="ngModel"
+        name="cardCVV"
+        [(ngModel)]="payment.cardCVV"
+        class="form-control"
+        id=""
+        placeholder="CVV"
+        required
+      />
+    </div>
+
+    <div class="alert alert-success my-2" *ngIf="buyBidsService.successFlag">
+      <strong>Success !</strong>
+      Your payment was processed successfully.
+    </div>
+    <div class="alert alert-danger my-2" *ngIf="buyBidsService.errorFlag">
+      <strong>Oops !</strong>
+      Your payment couldn't be processed.
+    </div>
+    <div class="mt-2">
+      <a class="btn btn-secondary" routerLink="/buy/bids"> Go Back </a>
+      <button
+        [disabled]="paymentForm.pristine || paymentForm.invalid"
+        type="submit"
+        class="btn btn-primary ms-2"
+      >
+        Pay Securely
+      </button>
+    </div>
+  </form>
+</div>
